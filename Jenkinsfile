@@ -9,6 +9,7 @@ pipeline {
                 echo "Building.."
                 echo "Hii"
                 echo "Added new Line For Test"
+                echo "Build"
                /*  sh '''
                 cd myapp
                 pip install -r requirements.txt
