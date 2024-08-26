@@ -7,19 +7,20 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                echo "Hii"
+               /*  echo "Hii"
                 echo "Added new Line For Test"
-                echo "Build"
-               /*  sh '''
-                cd myapp
-                pip install -r requirements.txt
-                ''' */
+                echo "Build" */
+                sh '''
+                   python3 helloworld.py
+                '''
+                // cd myapp
+                //  python3 helloworld.py
             }
         }
         stage('Test') {
             steps {
                 echo "Testing.."
-                /* sh '''
+               /*  sh '''
                 cd myapp
                 python3 hello.py
                 python3 hello.py --name=Aniket
